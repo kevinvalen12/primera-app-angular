@@ -1,0 +1,40 @@
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+input[type="text"]{
+    border: 1px solid  #6783ea;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 8px;
+    display: inline-block;
+    width: 40%;
+}
+
+button.primary {
+    padding: 15px;
+    border: 2px solid  #6783ea;
+    background: #6783ea;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button.primary:hover{
+    background-color: #899ff0;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .results{
+        grid-template-columns: repeat(2, 1ff);
+    }
+    input[types="text"]{
+        width: 70%;
+    }
+    
+}
