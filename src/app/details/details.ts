@@ -19,6 +19,7 @@ export class Details {
   housingService = inject(HousingService)
   housingLocation: HousingLocationInfo | undefined;
 
+  // formulario
   applyForm = new FormGroup({
       firstName: new FormControl(''),
       lastName: new FormControl(''),
@@ -30,7 +31,7 @@ export class Details {
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId)
     
   }
-
+  // formulario
   submitApplication() {
     this.housingService.submitApplication(
       this.applyForm.value.firstName ?? '',

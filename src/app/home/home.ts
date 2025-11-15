@@ -11,7 +11,8 @@ import { HousingService } from '../services/housing.service';
   selector: 'app-home',
   imports: [HousingLocation],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css']
+  ,
 })
 
 export class Home {
