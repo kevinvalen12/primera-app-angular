@@ -33,8 +33,13 @@ export class Home {
   }
 
   constructor(){
-    this.housingLocationList = this.HousingService.getAllHousingLocations();
-    this.filteredLocationList = this.housingLocationList;
+    this.HousingService
+      .getAllHousingLocations()
+      .then((housingLocationList : HousingLocationInfo[]) => {
+        this.housingLocationList = housingLocationList;
+        this.filteredLocationList =housingLocationList;  
+      }
+    )
   }
 }
 // la leccion 3 explica como crear un componete y agregarle un filtro y boton a este componen

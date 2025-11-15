@@ -1,3 +1,6 @@
+## Aprendido 
+En este curso se enseñará cómo crear componentes utilizando la terminal, agregar filtros con su respectivo botón, crear una interfaz mediante un comando en la terminal e importarla al componente, aplicar buenas prácticas en el desarrollo, añadir valores dinámicos, utilizar @for y comprender su aplicación, integrar formularios correctamente, configurar el enrutamiento de manera adecuada, agregar la funcionalidad de búsqueda al filtro e implementar comunicación entre componentes.
+
 
 ## ejecucucion del proyecto:
 1. npm install
@@ -7,6 +10,7 @@
 4. ng generate interface interfaces/housinglocation
 5. ng generate service services/housing --skip-tests
 6. ng generate component details
+7. npm install -g json-server
 
 ## link de conversaciones con IA:
 lesson-01, 02: https://chatgpt.com/share/6917313b-3064-8003-9377-2b9e950966ea
@@ -16,10 +20,7 @@ lesson-07, 08: https://chatgpt.com/share/6917f07b-21bc-8003-a5cd-319d00e60c42
 Corrjida-08: https://chat.deepseek.com/share/pd12yz0xqt0tlvx6sj
 lesson-09, 10: https://chatgpt.com/share/69189e0d-c2a8-8003-b77f-9442b79bf802
 lesson-11, 12: https://chatgpt.com/share/6918c999-f6bc-8003-8437-6773fb4896e6
-lesson-13: https://chatgpt.com/share/6918dc0f-e790-8003-ba81-3b174a2ec7d2
+lesson-13, 14: https://chatgpt.com/share/6918dc0f-e790-8003-ba81-3b174a2ec7d2
 
 ##  Vercel
 https://vercel.com/kevinvalen12s-projects/primera-app-angular.vercel.app
-
-## link de svg:
-https://icons8.com/icons/set/home
