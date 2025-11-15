@@ -8,7 +8,9 @@
 </section>
 <section class="results">
     <!-- [] para angular sigifica que la variabel padre -->
-     <!-- sin corchetes lo tomaria como texto  -->
-    <app-housing-location [housingLocation]="housingLocation" />
+    <!-- sin corchetes lo tomaria como texto  -->
+    @for (housingLocation of housingLocationList; track $index) {
+        <app-housing-location [housingLocation]="housingLocation" />
+    }
 </section>
 <!-- leccion 6 agrege una nueva propiedad vinculantes  -->
