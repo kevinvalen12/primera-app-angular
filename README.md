@@ -9,6 +9,7 @@
 ## link de conversaciones con IA:
 lesson-01, 02: https://chatgpt.com/share/6917313b-3064-8003-9377-2b9e950966ea
 lesson-03, 04:  https://chatgpt.com/share/69178a07-4374-8003-8d64-eb9717fda2bf
+lesson-05 : https://chatgpt.com/share/6917cba7-7ab0-8003-91c7-94f278b22078
 
 ## link de svg:
 https://icons8.com/icons/set/home
