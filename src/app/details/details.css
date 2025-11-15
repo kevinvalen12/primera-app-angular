@@ -53,12 +53,14 @@ li {
 }
 label, input {
   display: block;
+  font-family: 'Courier New', Courier, monospace;
+  color: #6783ea;
 }
 label {
-  color: var(--secondary-color);
+  color: #6783ea;
   font-weight: bold;
-  text-transform: uppercase;
   font-size: 12pt;
+  font-family: 'Courier New', Courier, monospace;
 }
 input {
   font-size: 16pt;
@@ -69,6 +71,20 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: solid .3px;
+  border-radius: 10px;
+}
+button.primary {
+    padding: 15px;
+    border: 2px solid  #6783ea;
+    background: #6783ea;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.primary:hover{
+    background-color: #899ff0;
 }
 @media (max-width: 1024px) {
   .listing-photo {

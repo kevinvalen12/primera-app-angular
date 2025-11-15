@@ -1,12 +1,14 @@
 import { Component, inject } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { HousingService } from '../services/housing.service';
 import { HousingLocationInfo } from '../interfaces/housinglocation';
+import { first } from 'rxjs';
 
 
 @Component({
   selector: 'app-details',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './details.html',
   styleUrl: './details.css',
 })
@@ -17,9 +19,25 @@ export class Details {
   housingService = inject(HousingService)
   housingLocation: HousingLocationInfo | undefined;
 
+  applyForm = new FormGroup({
+      firstName: new FormControl(''),
+      lastName: new FormControl(''),
+      email: new FormControl(''),
+    });
+
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId)
+    
+  }
+
+  submitApplication() {
+    this.housingService.submitApplication(
+      this.applyForm.value.firstName ?? '',
+      this.applyForm.value.lastName ?? '',
+      this.applyForm.value.email ?? '',
+    );
   }
 }
 // lession 11 agregar ruta para mostrar pagina de detalles
+// leccion 12 agregar formularios en angular y funciones de formulario 
