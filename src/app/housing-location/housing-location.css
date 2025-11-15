@@ -1,13 +1,14 @@
 /* color principal  #6783ea */
 .listing {
-    background-color: #6bb87e;
+    background-color: #d3dcff;
     border-radius: 30px;
     padding-bottom: 30px;
 }
 
 .listing-heading {
-    color: #6783ea;
+    color: #5876e5;
     padding: 10px 20px 0 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .listing-photo {
@@ -19,6 +20,8 @@
 
 .listing-location {
     padding: 10px 20px 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #5876e5;
 }
 
 .listing-location::before {
