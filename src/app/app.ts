@@ -1,17 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-// importacion de componentes home
-import { Home } from './home/home';
+import { RouterLink, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   //componente se debe de importar explicitamente
-  imports: [Home], 
+  imports: [ RouterOutlet, RouterLink ], 
   // templateUrl: './app.html',
   styleUrl: './app.css',
   //agragar template 
   template: `
      <main>
+      <a [routerLink]="['/']"></a>
       <header>
         <div class="brand-name">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
@@ -21,7 +21,7 @@ import { Home } from './home/home';
         </div>
       </header>      
       <section class="content">
-        <app-home></app-home>
+        <router-outlet />
       </section>
     </main>
   `,
