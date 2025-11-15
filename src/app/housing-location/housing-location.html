@@ -7,5 +7,6 @@
     />
     <h2 class="listing-heading">{{ housingLocation().name }}</h2>
     <p class="listing-location">{{ housingLocation().city }}</p>
+    <a [routerLink]="['/details', housingLocation().id]">Lear More</a>
 </section>
 <!-- leccion 07 se agrego estructura html y se utilizo  la sintaxis para renderizar valores -->
