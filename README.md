@@ -16,6 +16,7 @@ lesson-07, 08: https://chatgpt.com/share/6917f07b-21bc-8003-a5cd-319d00e60c42
 Corrjida-08: https://chat.deepseek.com/share/pd12yz0xqt0tlvx6sj
 lesson-09, 10: https://chatgpt.com/share/69189e0d-c2a8-8003-b77f-9442b79bf802
 lesson-11, 12: https://chatgpt.com/share/6918c999-f6bc-8003-8437-6773fb4896e6
+lesson-13: https://chatgpt.com/share/6918dc0f-e790-8003-ba81-3b174a2ec7d2
 
 ##  Vercel
 https://vercel.com/kevinvalen12s-projects/primera-app-angular.vercel.app

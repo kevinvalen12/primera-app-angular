@@ -1,15 +1,15 @@
 <section>
     <div>
         <form>
-        <input type="text" placeholder="filter by city" />
-        <button class="primary" type="button">Search</button>
+        <input type="text" placeholder="filter by city" #filter/>
+        <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
         </form>
     </div>
 </section>
 <section class="results">
     <!-- [] para angular sigifica que la variabel padre -->
     <!-- sin corchetes lo tomaria como texto  -->
-    @for (housingLocation of housingLocationList; track $index) {
+    @for (housingLocation of filteredLocationList; track $index) {
         <app-housing-location [housingLocation]="housingLocation" />
     }
 </section>

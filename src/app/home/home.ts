@@ -19,11 +19,22 @@ export class Home {
   // [] indica un array
   // correjido housingLocationList
   housingLocationList: HousingLocationInfo[] = [];
-
   HousingService: HousingService = inject(HousingService);
+  filteredLocationList: HousingLocationInfo[] = [];
+
+  filterResults(text: string) {    
+    if (!text) {      
+      this.filteredLocationList = this.housingLocationList;      
+      return;    
+    }    
+    this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>      
+      housingLocation?.city.toLowerCase().includes(text.toLowerCase()),    
+    );  
+  }
 
   constructor(){
     this.housingLocationList = this.HousingService.getAllHousingLocations();
+    this.filteredLocationList = this.housingLocationList;
   }
 }
 // la leccion 3 explica como crear un componete y agregarle un filtro y boton a este componen
